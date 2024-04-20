@@ -1,0 +1,33 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__logo {
+        width: 250px;
+        img {
+            width: 100%;
+        }
+    }
+    &__official {
+        font-weight: 500;
+        font-size: 12px;
+        color: #FFFFFF;
+        text-align: center;
+        span {
+            display: block;/* щоб елементр був блочний і займав всю ширину яка йому доступна */
+            font-size: 18px;/* так як насправді ці два текста відрізняються лише розміром шрифту то ми і пишемо для spen інший розмір шрифту а все інше прийде до ньго з елементу __official */
+            }
+    }
+    &__phone {
+        display: block;/* щоб цей елемент займав всю ширину яка йому дозволена */
+        font-weight: 700;
+        font-size: 18px;
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;/* через те що ми поміняли flex-derection на column головна вісь поміняла свій напрямок і тепер align-items відповідає за горизонтальний напрямок, ми притискаємо елементи до їхнього  кінця(flex-end) */
+    }
+}
