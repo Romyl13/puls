@@ -152,38 +152,67 @@
 @media (max-width: 576px) {
     .header {
         &__logo {
-            width: 150px;
+            width: 33%;
         }
         &__official {
-            font-size: 9px;
+            font-size: 7px;
             span {
-                font-size: 13px;
+                font-size: 8px;
                 }
         }
         &__phone {
-            font-size: 11px;
+            font-size: 9px;
         }
     }
+    .header__contacts {
+        align-items: center;
+        max-width: 34%;
+    }
+
     .footer__info {
         max-width: 90%;
         max-height: 40%;
     }
-
-    .button {
-        width: 127px;
-        margin-top: 3px;
-        height: 25px;
-        border-radius: 13px;
-        font-size: 8px;
-        line-height: 13px;
-        &_main {
-            font-size: 12px;
-            width: 200px;
-            height: 40px;
-            margin-top: 25px;
-        }
+    .footer__addr {
+        display: block;
+        font-weight: 500;
+        font-size: 16px;
+        color: #fff;
+        margin-bottom: 24px;
+        text-align: center;
+        line-height: 20px;
+    }
+    .footer__tel {
+        display: block;
+        line-height: 20px;
+        font-weight: 700;
+        font-size: 18px;
+        color: #fff;
+        text-align: center;
+        margin-bottom: 26px;
+        text-decoration: none;
+    }
+    .footer__social-item {
+        margin: 0 10px;
+        padding: 0 10px;
     }
 
+
+    .modul {
+        width: 60%;
+        min-height: 34%;
+        padding: 20px 20px 20px 20px;
+    }
+    .modul__close {
+        right: -33px;
+        font-size: 33px;
+    }
+    .modul__subtitle {
+        font-size: 18px;
+    }
+    .modul__descr {
+        display: none;
+    }
 
     .promo {
         padding: 18px 0 20px 0;
@@ -252,26 +281,12 @@
 
 
 @media (max-width: 576px) {
-    .header {
-        &__logo {
-            width: 110px;
-        }
-        &__official {
-            font-size: 8px;
-            span {
-                font-size: 9px;
-                }
-        }
-        &__phone {
-            font-size: 9px;
-        }
-    }
     .button {
-        width: 115px;
+        width: 100px;
         margin-top: 2px;
         height: 23px;
         border-radius: 10px;
-        font-size: 8px;
+        font-size: 6px;
         font-weight: 900;
         &_main {
             display: block;
@@ -283,12 +298,11 @@
             font-size: 11px;
         }
         &_submit {
-            width: 153px;
             border-radius: 5px;
             border: none;
             font-weight: 500;
-            line-height: 19px;
-            width: 70%;
+            line-height: 18px;
+            width: 90%;
             height: 58px;
             font-size: 16px;
             color: #fff;
@@ -336,7 +350,26 @@
         padding: 65px 0 50px 0;
     }
 
+    .feed-form {
+        margin-top: 18px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
 
+    .feed-form input {
+        height: 42px;
+        margin-bottom: 13px;
+        border: none;
+        border-radius: 5px;
+        padding: 0 20px;
+        font-weight: 300;
+        font-size: 14px;
+        color: #4b4b4b;
+    }
+    
+    
 
 
     .catalog {
@@ -356,5 +389,44 @@
                 font-weight: 900;
             }
         }
+    }
+}
+
+@media (max-width: 551px) { 
+    .modul__subtitle {
+        font-size: 18px;
+    }
+    .modul {
+        width: 60%;
+        min-height: 34%;
+        padding: 20px 20px 20px 20px;
+    }
+    .button_submit {
+        height: 52px;
+        font-size: 18px;    
+    }
+}
+
+@media (max-width: 420px) {
+    .modul__subtitle {
+        font-size: 14px;
+        font-weight: 900;
+    }
+    .modul {
+        width: 70%;
+        min-height: 34%;
+        padding: 20px 20px 20px 20px;
+    }
+    .button_submit {
+        width: 90%;
+        height: 38px;
+        font-size: 14px;
+        font-weight: 700;    
+    }
+
+    .feed-form input {
+        height: 38px;
+        font-weight: 900;
+        font-size: 12px;
     }
 }

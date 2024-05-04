@@ -13,6 +13,18 @@
                 margin: 0 auto;
                 margin-bottom: 43px;
             }
+            &_animated {
+                img {/* можна написати просто ANIMATION: і потім всі значення що ідуть нижче по порядку і все буде працювати так само */
+                    /* завжди потрібно мінімум 2 параметра(перших цих) яка анімація і скільки вона буде іти часу */
+                    animation-name: heartbeat;/* яка анімація буде */
+                    animation-duration: 3s;/* скільки часу буде анімація */
+                    animation-timing-function: ease; /* як буде проігруватись анімація відносно часу */
+                    animation-iteration-count: infinite; /* скільки разів буде проігруватись анімація */
+                    &:hover {
+                        animation-play-state: paused;/* наводиш на анімацію і вона перестає анімуватись */
+                    }
+                }
+            }
         }
         &__text {
             font-weight: 700;
