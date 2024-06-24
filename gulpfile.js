@@ -50,7 +50,7 @@ gulp.task('fonts', function () {
 });
 
 gulp.task('icons', function () {
-    return gulp.src("src/icons/**/*.+(jpg|png|jpeg)")
+    return gulp.src("src/icons/**/*.+(png|jpg|gif|ico|svg|webp|jpeg)")
         .pipe(gulp.dest("dist/icons"));
 });
 
@@ -60,7 +60,7 @@ gulp.task('mailer', function () {
 });
 
 gulp.task('images', function () {
-    return gulp.src("src/img/**/*.+(jpg|png|jpeg)")
+    return gulp.src("src/img/**/*.+(png|jpg|gif|ico|svg|webp|jpeg)")
         .pipe(imagemin())
         .pipe(gulp.dest("dist/img")); 
 });
